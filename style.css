@@ -1,0 +1,233 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Bigshot+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+html, body {
+    min-height: 100vh;
+    font-family: var(--font-text);
+}
+
+:root {
+    --font-title: "Bigshot One", serif;
+    --font-subtitles: 'Outfit', sans-serif; 
+    --font-text: Verdana, Geneva, Tahoma, sans-serif;
+    --color-nutmeg: hsl(14, 45%, 36%);
+    --color-dark-raspberry: hsl(332, 51%, 32%);
+    --color-white: hsl(0, 0%, 100%);
+    --color-rose-white: hsl(330, 100%, 98%);
+    --color-eggshell: hsl(30, 54%, 90%);
+    --color-light-grey: hsl(30, 18%, 87%);
+    --color-wenge-brown: hsl(30, 10%, 34%);
+    --color-dark-charcoal: hsl(24, 5%, 18%);
+}
+
+body {
+    background-color: var(--color-eggshell); 
+}
+
+main {
+    background-color: var(--color-white);
+    margin: auto;
+    margin-top: 100px;
+    margin-bottom: 50px;
+    max-width: 9cm;
+    min-height: 160vh;
+    border-radius: 10px;
+    padding: 30px;
+    box-sizing: border-box;
+}
+
+.omelete {
+    margin: auto;
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+h1 {
+    font-family: var(--font-title);
+    font-style: normal;
+    color: var(--color-dark-charcoal);
+    padding: 20px 0px 0px 0px;
+    font-size: 2em;
+}
+
+p {
+    font-family: var(--font-text);
+    font-weight: 400;
+    font-size: 1em;
+    padding: 20px 0px;
+    line-height: 1.5em;
+}
+
+.Preparation {
+    width: 100%;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 30px;
+    background-color: rgba(128, 0, 128, 0.055);
+    box-sizing: border-box;
+}
+
+.Preparation h2 {
+    color: rgb(105, 7, 97);
+    font-family: var(--font-subtitles);
+    font-weight: 500;
+    padding-left: 10px;
+    padding-bottom: 10px;
+}
+
+.Preparation ul {
+    padding-left: 35px;
+    line-height: 1.9em;
+}
+
+.Preparation li::marker {
+    color: rgb(105, 7, 97);
+}
+
+.Preparation li {
+    padding-left: 10px;
+}
+
+.ingredients h2 {
+    color: var(--color-nutmeg);
+    font-family: var(--font-subtitles);
+    font-weight: 500;
+    font-size: 1.8em;
+    padding-bottom: 20px;
+}
+
+.ingredients ul {
+    padding-left: 25px;
+    line-height: 2em;
+    padding-bottom: 20px;
+}
+
+.ingredients li::marker {
+    color: var(--color-nutmeg);
+}
+
+.ingredients li {
+    padding-left: 10px;
+}
+
+hr {
+    opacity: 50%;
+}
+
+.Instructions h2 {
+    padding-top: 20px;
+    color: var(--color-nutmeg); 
+    font-family: var(--font-subtitles);
+    font-weight: 500;
+    font-size: 1.8em;
+    padding-bottom: 20px;
+}
+
+.Instructions ol {
+    padding-left: 25px;
+    line-height: 1.5em;
+    padding-bottom: 20px;
+}
+
+.Instructions li::marker {
+    color: var(--color-nutmeg);
+    font-weight: bolder;
+}
+
+.Instructions li {
+    padding-left: 10px;
+    padding-bottom: 10px;
+}
+
+.Nutrition h2 {
+    padding-top: 20px;
+    color: var(--color-nutmeg); 
+    font-family: var(--font-subtitles);
+    font-weight: 500;
+    font-size: 1.8em;
+    padding-bottom: 20px;
+}
+
+.Nutrition p {
+    padding: 0px 0px 20px;
+}
+
+aside p {
+    padding: 10px 0px;
+    text-indent: 25px;
+}
+
+.tabela p {
+    color: var(--color-nutmeg);
+    font-weight: 600;
+}
+
+.attribution {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Responsividade para dispositivos móveis */
+@media (max-width: 600px) {
+    h1 {
+        font-size: 1.5em;
+    }
+
+    .ingredients h2, .Instructions h2, .Nutrition h2 {
+        font-size: 1.5em;
+    }
+
+    .Preparation, .ingredients ul, .Instructions ol {
+        padding-left: 20px;
+    }
+}
+
+/* Ajustes para desktop */
+@media (min-width: 375px) {
+    main {
+        max-width: 1440px;
+    }
+
+    .Preparation, .ingredients, .Instructions, .Nutrition {
+        padding: 30px;
+    }
+
+    h1 {
+        font-size: 2.5em;
+    }
+
+    .ingredients h2, .Instructions h2, .Nutrition h2 {
+        font-size: 2em;
+    }
+
+    .Calories {
+        color: black;
+        font-weight: 400;
+    }
+    
+    .Carbs {
+        color: black;
+        font-weight: 400;
+    }
+    
+    .Protein {
+        color: black;
+        font-weight: 400;
+    }
+    
+    .Fat { 
+        color: black;
+        font-weight: 400;
+    }
+    
+}
